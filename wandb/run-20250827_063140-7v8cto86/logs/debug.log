@@ -1,0 +1,20 @@
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Configure stats pid to 17038
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Loading settings from /workspace/sriai/wandb/settings
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'SriAI', 'mode': 'online'}
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train-fast.py', 'program_abspath': '/workspace/sriai/train-fast.py', 'program': '/workspace/sriai/train-fast.py'}
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_init.py:_log_setup():526] Logging user logs to /workspace/sriai/wandb/run-20250827_063140-7v8cto86/logs/debug.log
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_init.py:_log_setup():527] Logging internal logs to /workspace/sriai/wandb/run-20250827_063140-7v8cto86/logs/debug-internal.log
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_init.py:init():566] calling init triggers
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'model_name': 'HuggingFaceTB/SmolLM2-1.7B', 'max_seq_length': 2048, 'batch_size': 32, 'gradient_accumulation': 1, 'num_epochs': 2, 'learning_rate': 0.0005, 'warmup_ratio': 0.01, 'weight_decay': 0.01, 'lora_r': 32, 'lora_alpha': 64, 'lora_dropout': 0, 'use_4bit': True, 'use_gradient_checkpointing': False, 'use_packing': True, 'save_steps': 10000, 'save_total_limit': 1, 'eval_steps': 10000, 'logging_steps': 50, 'output_dir': 'outputs', 'final_model_dir': 'models/sinhala_llm_final', 'dataset_path': 'data/train_dataset_cleaned', 'seed': 42, 'fp16': True, 'tf32': True, 'num_workers': 8, 'wandb_project': 'SriAI', 'wandb_run_name': 'sinhala-fast-20250827-0621'}
+2025-08-27 06:31:40,660 INFO    MainThread:17038 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2025-08-28 05:35:57,913 INFO    MainThread:17038 [wandb_run.py:_finish():1962] finishing run hasendra-nsbm/SriAI/y10r1omp
+2025-08-28 05:35:57,913 INFO    MainThread:17038 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2025-08-28 05:35:57,914 INFO    MainThread:17038 [wandb_run.py:_restore():2185] restore
+2025-08-28 05:35:57,914 INFO    MainThread:17038 [wandb_run.py:_restore():2191] restore done
+2025-08-28 05:36:05,576 INFO    MainThread:17038 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2025-08-28 05:36:05,578 INFO    MainThread:17038 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2025-08-28 05:36:05,583 INFO    MainThread:17038 [wandb_run.py:_footer_sync_info():3816] logging synced files

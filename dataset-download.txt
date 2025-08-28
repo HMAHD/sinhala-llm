@@ -1,0 +1,10 @@
+curl -L https://envs.sh/F07.tar.gz -o sinhala_dataset.tar.gz
+
+
+curl -O  https://envs.sh/F07.tar.gz
+
+
+curl -L -O https://envs.sh/F07.tar.gz
+
+
+Unzip - tar -xzvf F07.tar.gz

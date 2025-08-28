@@ -1,0 +1,74 @@
+  0%|                                                                                                                                                              | 0/60190 [00:00<?, ?it/s]ERROR:__main__:Training failed: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 777, in convert_to_tensors
+    tensor = as_tensor(value)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 739, in as_tensor
+    return torch.tensor(value)
+ValueError: too many dimensions 'str'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/data/data_collator.py", line 46, in __call__
+    return self.torch_call(features)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/data/data_collator.py", line 1013, in torch_call
+    batch = pad_without_fast_tokenizer_warning(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/data/data_collator.py", line 67, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 3407, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 241, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 793, in convert_to_tensors
+    raise ValueError(
+ValueError: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`text` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+Traceback (most recent call last):
+  File "/workspace/sriai/train.py", line 574, in train
+    result = self.trainer.train(resume_from_checkpoint=resume_checkpoint)
+  File "/workspace/sriai/unsloth_compiled_cache/UnslothSFTTrainer.py", line 738, in train
+    output = super().train(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "<string>", line 271, in _fast_inner_training_loop
+  File "/usr/local/lib/python3.10/dist-packages/unsloth_zoo/loss_utils.py", line 300, in _unsloth_get_batch_samples
+    batch_samples += [next(epoch_iterator)]
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/data_loader.py", line 567, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1516, in _next_data
+    return self._process_data(data, worker_id)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 1551, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_utils.py", line 769, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 777, in convert_to_tensors
+    tensor = as_tensor(value)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 739, in as_tensor
+    return torch.tensor(value)
+ValueError: too many dimensions 'str'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/data/data_collator.py", line 46, in __call__
+    return self.torch_call(features)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/data/data_collator.py", line 1013, in torch_call
+    batch = pad_without_fast_tokenizer_warning(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/data/data_collator.py", line 67, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 3407, in pad
+    return BatchEncoding(batch_outputs, tensor_type=return_tensors)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 241, in __init__
+    self.convert_to_tensors(tensor_type=tensor_type, prepend_batch_axis=prepend_batch_axis)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 793, in convert_to_tensors
+    raise ValueError(
+ValueError: Unable to create tensor, you should probably activate truncation and/or padding with 'padding=True' 'truncation=True' to have batched tensors with the same length. Perhaps your features (`text` in this case) have excessive nesting (inputs type `list` where type `int` is expected).
+ERROR:__main__:Training failed!
+  0%|                                                                                                                                                              | 0/60190 [00:20<?, ?it/s]

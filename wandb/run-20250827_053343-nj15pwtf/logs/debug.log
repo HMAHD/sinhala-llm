@@ -1,0 +1,14 @@
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Configure stats pid to 16444
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Loading settings from /workspace/sriai/wandb/settings
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'SriAI', 'mode': 'online'}
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_final.py', 'program_abspath': '/workspace/sriai/train_final.py', 'program': '/workspace/sriai/train_final.py'}
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_init.py:_log_setup():526] Logging user logs to /workspace/sriai/wandb/run-20250827_053343-nj15pwtf/logs/debug.log
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_init.py:_log_setup():527] Logging internal logs to /workspace/sriai/wandb/run-20250827_053343-nj15pwtf/logs/debug-internal.log
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_init.py:init():566] calling init triggers
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'model_name': 'HuggingFaceTB/SmolLM2-1.7B', 'max_seq_length': 1536, 'batch_size': 16, 'gradient_accumulation': 3, 'num_epochs': 4, 'learning_rate': 0.0005, 'warmup_ratio': 0.03, 'weight_decay': 0.01, 'lora_r': 64, 'lora_alpha': 128, 'lora_dropout': 0.05, 'use_4bit': True, 'use_gradient_checkpointing': True, 'save_steps': 5000, 'save_total_limit': 2, 'eval_steps': 5000, 'logging_steps': 25, 'output_dir': 'outputs', 'final_model_dir': 'models/sinhala_llm_final', 'dataset_path': 'data/train_dataset_cleaned', 'seed': 42, 'fp16': True, 'tf32': True, 'num_workers': 2, 'wandb_project': 'SriAI', 'wandb_run_name': 'sinhala-final-20250827-0528'}
+2025-08-27 05:33:43,805 INFO    MainThread:16444 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2025-08-27 06:16:47,225 WARNING MsgRouterThr:16444 [router.py:message_loop():77] message_loop has been closed

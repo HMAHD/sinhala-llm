@@ -1,0 +1,106 @@
+2025-08-26 05:59:40,264 - INFO - 🚀 ENHANCED SINHALA DATASET PROCESSING
+2025-08-26 05:59:40,265 - INFO - ============================================================
+2025-08-26 05:59:40,265 - INFO - Configuration:
+2025-08-26 05:59:40,265 - INFO -   Input file: train.json
+2025-08-26 05:59:40,265 - INFO -   Model: HuggingFaceTB/SmolLM2-1.7B
+2025-08-26 05:59:40,265 - INFO -   Max sequence length: 2048
+2025-08-26 05:59:40,265 - INFO -   Validation split: 5.0%
+2025-08-26 05:59:40,265 - INFO -   System memory: 64GB
+2025-08-26 05:59:40,265 - INFO - ============================================================
+2025-08-26 05:59:40,265 - INFO - 
+🔄 PROCESSING DATASET
+2025-08-26 05:59:40,265 - INFO - ============================================================
+2025-08-26 05:59:40,265 - INFO - Loading tokenizer: HuggingFaceTB/SmolLM2-1.7B
+2025-08-26 05:59:40,649 - INFO - 📂 Loading data from train.json
+2025-08-26 05:59:44,241 - INFO - ✓ Loaded 406,532 raw samples
+2025-08-26 05:59:44,242 - INFO - ✓ Validating samples...
+2025-08-26 05:59:44,931 - INFO - ✓ Valid samples: 406,469/406,532
+2025-08-26 05:59:44,931 - INFO - 🔍 Removing duplicates...
+2025-08-26 05:59:46,117 - INFO - ✓ Removed 855 duplicates
+2025-08-26 05:59:46,175 - INFO - ✓ Split: 385,614 train, 20,000 validation
+2025-08-26 05:59:46,175 - INFO - 📝 Formatting samples...
+2025-08-26 06:44:07,430 - INFO - 📊 Analyzing token statistics...
+2025-08-26 06:51:16,105 - INFO - 
+📊 Token Statistics:
+2025-08-26 06:51:16,105 - INFO -   Average tokens: 870.6
+2025-08-26 06:51:16,105 - INFO -   Median tokens: 586.0
+2025-08-26 06:51:16,105 - INFO -   95th percentile: 2048
+2025-08-26 06:51:16,105 - INFO -   99th percentile: 2048
+2025-08-26 06:51:16,105 - INFO -   Truncated samples: 9.0%
+2025-08-26 06:51:16,834 - INFO - 
+💾 Saving processed datasets...
+2025-08-26 06:51:17,083 - INFO -   ✓ Training dataset saved to: data/train_dataset
+2025-08-26 06:51:17,084 - INFO -   ✓ Validation dataset saved to: data/val_dataset
+2025-08-26 06:51:17,086 - INFO -   ✓ Problematic samples saved to: data/problematic_samples.json
+2025-08-26 06:51:17,086 - INFO -   ✓ Processing report saved to: data/processing_report.txt
+2025-08-26 06:51:17,087 - INFO - 
+============================================================
+2025-08-26 06:51:17,087 - INFO - 📊 PROCESSING SUMMARY
+2025-08-26 06:51:17,087 - INFO - ============================================================
+2025-08-26 06:51:17,087 - INFO - Total samples: 406,532
+2025-08-26 06:51:17,087 - INFO - Valid samples: 406,469 (100.0%)
+2025-08-26 06:51:17,087 - INFO - Training samples: 385,614
+2025-08-26 06:51:17,087 - INFO - Validation samples: 20,000
+2025-08-26 06:51:17,087 - INFO - Duplicates removed: 855
+2025-08-26 06:51:17,087 - INFO - Invalid samples filtered: 63
+2025-08-26 06:51:17,087 - INFO - 
+📏 Sequence Lengths:
+2025-08-26 06:51:17,087 - INFO -   Average tokens: 871
+2025-08-26 06:51:17,087 - INFO -   Max tokens: 2048
+2025-08-26 06:51:17,087 - INFO -   ⚠️ Truncated samples: 34,551
+2025-08-26 06:51:17,087 - INFO - 
+🌍 Language Distribution:
+2025-08-26 06:51:17,087 - INFO -   Sinhala: 96.4%
+2025-08-26 06:51:17,087 - INFO -   English: 1.2%
+2025-08-26 06:51:17,087 - INFO -   Mixed: 2.4%
+2025-08-26 06:51:17,087 - INFO - ============================================================
+2025-08-26 06:51:17,087 - INFO - 
+✅ Data processing complete!
+2025-08-26 06:51:17,087 - INFO - 📁 Output saved to: data
+2025-08-26 06:51:17,087 - INFO - Ready for training: python3 train.py
+2025-08-27 03:53:47,583 - INFO - 🚀 FIXED SINHALA DATASET PROCESSING
+2025-08-27 03:53:47,583 - INFO - ============================================================
+2025-08-27 03:53:47,583 - INFO - Configuration:
+2025-08-27 03:53:47,583 - INFO -   Input: train.json
+2025-08-27 03:53:47,583 - INFO -   Model: HuggingFaceTB/SmolLM2-1.7B
+2025-08-27 03:53:47,583 - INFO -   Max length: 1536
+2025-08-27 03:53:47,583 - INFO - ============================================================
+2025-08-27 03:53:47,583 - INFO - 
+🔄 PROCESSING DATASET WITH TOKENIZATION FIXES
+2025-08-27 03:53:47,583 - INFO - ============================================================
+2025-08-27 03:53:47,583 - INFO - Loading tokenizer: HuggingFaceTB/SmolLM2-1.7B
+2025-08-27 03:53:47,935 - INFO - 📂 Loading data from train.json
+2025-08-27 03:53:51,739 - INFO - ✓ Loaded 406,532 raw samples
+2025-08-27 03:53:51,740 - INFO - ✓ Validating samples...
+2025-08-27 03:53:52,230 - INFO - ✓ Valid samples: 406,469/406,532
+2025-08-27 03:53:52,231 - INFO - 🔍 Removing duplicates...
+2025-08-27 03:53:53,694 - INFO - ✓ Removed 855 duplicates
+2025-08-27 03:53:53,768 - INFO - 📝 Formatting and testing tokenization...
+2025-08-27 04:50:58,764 - INFO - ✓ Successfully processed 405,614 samples
+2025-08-27 04:50:58,764 - INFO -   Tokenization errors: 0
+2025-08-27 04:50:58,808 - INFO - ✓ Split: 395,614 train, 10,000 validation
+2025-08-27 04:54:09,207 - INFO - 
+📊 Dataset Verification:
+2025-08-27 04:54:09,208 - INFO -   Sample type: <class 'str'>
+2025-08-27 04:54:09,208 - INFO -   Sample preview: ### Instruction:
+පහත පුවත සංක්ෂිප්ත කරන්න:
+
+### Input:
+බස්නාහිර සහ සබරගමුව පළාත් වලත් ගාල්ල සහ මාතර ...
+2025-08-27 04:54:10,440 - INFO -   Avg tokens: 788
+2025-08-27 04:54:10,440 - INFO -   Max tokens: 1536
+2025-08-27 04:54:10,440 - INFO -   Min tokens: 144
+2025-08-27 04:54:10,837 - INFO - 
+💾 Saving processed datasets...
+2025-08-27 04:54:11,322 - INFO -   ✓ Training dataset saved to: data/train_dataset
+2025-08-27 04:54:11,343 - INFO -   ✓ Validation dataset saved to: data/val_dataset
+2025-08-27 04:54:11,343 - INFO -   ✓ Report saved to: data/processing_report.txt
+2025-08-27 04:54:11,343 - INFO - 
+============================================================
+2025-08-27 04:54:11,343 - INFO - ✅ PROCESSING COMPLETE!
+2025-08-27 04:54:11,343 - INFO - Training samples: 395,614
+2025-08-27 04:54:11,343 - INFO - Validation samples: 10,000
+2025-08-27 04:54:11,343 - INFO - Tokenization errors fixed: 0
+2025-08-27 04:54:11,343 - INFO - ============================================================
+2025-08-27 04:54:11,343 - INFO - 
+📁 Ready for training: python3 train.py

@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/HMAHD/sinhala-llm?style=for-the-badge)](https://github.com/HMAHD/sinhala-llm/stargazers)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![Downloads](https://img.shields.io/npm/dm/package-name.svg)]()
 
-[![GitHub forks](https://img.shields.io/github/forks/HMAHD/sinhala-llm?style=for-the-badge)](https://github.com/HMAHD/sinhala-llm/network)
-
-[![GitHub issues](https://img.shields.io/github/issues/HMAHD/sinhala-llm?style=for-the-badge)](https://github.com/HMAHD/sinhala-llm/issues)
-
-[![GitHub license](https://img.shields.io/github/license/HMAHD/sinhala-llm?style=for-the-badge)](LICENSE)
 
 **Dataset and scripts for fine-tuning the SmolLM2-1.7B language model for Sinhala language adaptation.**
+
+
 
 </div>
 
@@ -105,13 +105,6 @@ TODO: Add license information (if provided in the repository)
 
 TODO: Add acknowledgments if any.
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![Downloads](https://img.shields.io/npm/dm/package-name.svg)]()
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![Downloads](https://img.shields.io/npm/dm/package-name.svg)]()
+
 

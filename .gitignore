@@ -2,3 +2,8 @@ data/
 *.tar.gz
 *.arrow
 train.json
+# Ignore datasets and cache
+data/
+*.arrow
+*.tar.gz
+train.json
